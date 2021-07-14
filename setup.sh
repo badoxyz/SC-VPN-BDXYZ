@@ -440,12 +440,12 @@ echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "   - Dev/Main                : Geo"  | tee -a log-install.txt
-echo "   - Telegram                : T.me/sampiiiiu"  | tee -a log-install.txt
+echo "   - Dev/Main                : Badoxyz"  | tee -a log-install.txt
+echo "   - Telegram                : t.me/Badoxyz"  | tee -a log-install.txt
 echo "   - Instagram               : ~"  | tee -a log-install.txt
-echo "   - Whatsapp                : 085333790161"  | tee -a log-install.txt
+echo "   - Whatsapp                : wa.me/6281290905499"  | tee -a log-install.txt
 echo "   - Facebook                : ~" | tee -a log-install.txt
-echo "------------------Script Created By Geo-----------------" | tee -a log-install.txt
+echo "------------------Script Created By Badoxyz-----------------" | tee -a log-install.txt
 echo ""
 echo " reboot 10 Sec"
 sleep 10
