@@ -442,9 +442,9 @@ echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   - Dev/Main                : Badoxyz"  | tee -a log-install.txt
 echo "   - Telegram                : t.me/Badoxyz"  | tee -a log-install.txt
-echo "   - Instagram               : ~"  | tee -a log-install.txt
+echo "   - Instagram               : @asepkurniawans"  | tee -a log-install.txt
 echo "   - Whatsapp                : wa.me/6281290905499"  | tee -a log-install.txt
-echo "   - Facebook                : ~" | tee -a log-install.txt
+echo "   - Facebook                : Asep Muhammad Kurniawan" | tee -a log-install.txt
 echo "------------------Script Created By Badoxyz-----------------" | tee -a log-install.txt
 echo ""
 echo " reboot 10 Sec"
