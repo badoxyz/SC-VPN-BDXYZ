@@ -38,10 +38,11 @@ cat <<EOF
 
 ================================
 PPTP VPN
-
+================================
 Server IP    : $PUBLIC_IP
 Username     : $VPN_USER
 Password     : $VPN_PASSWORD
 Expired On   : $exp
 =================================
+Script Installed By Badoxyz
 EOF

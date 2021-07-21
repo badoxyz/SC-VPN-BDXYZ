@@ -42,10 +42,11 @@ echo -e "### $VPN_USER $exp">>"/var/lib/premium-script/data-user-l2tp"
 cat <<EOF
 L2TP/Ipsec Psk VPN Acc Information
 ====================================
-Server IP    : $PUBLIC_IP
+Server IP    : [BUG].$PUBLIC_IP
 IPsec PSK    : myvpn
 Username     : $VPN_USER
 Password     : $VPN_PASSWORD
 Expired ON   : $exp
 ====================================
+Script Installed By Badoxyz
 EOF

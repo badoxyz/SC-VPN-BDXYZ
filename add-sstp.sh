@@ -29,7 +29,7 @@ cat <<EOF
 
 ================================
 SSTP VPN
-
+================================
 Server IP     : $IP
 Username      : $user
 Password      : $pass
@@ -37,4 +37,5 @@ Port          : $sstp
 Cert          : http://$IP:81/server.crt
 Expired On    : $exp
 ================================
+Script Installed By Badoxyz
 EOF
