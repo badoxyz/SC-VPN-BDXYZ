@@ -68,7 +68,10 @@ systemctl restart v2ray
 systemctl restart v2ray@none
 service cron restart
 clear
-echo -e "==========-V2RAY/VMESS-=========="
+echo -e "Premium Account Has Been Successfully Created"
+echo -e "====================================="
+echo -e "V2RAY/VMESS Account Information"
+echo -e "====================================="
 echo -e "Remarks        : ${user}"
 echo -e "Domain         : ${domain}"
 echo -e "port TLS       : ${tls}"

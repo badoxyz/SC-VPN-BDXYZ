@@ -40,6 +40,8 @@ clear
 chmod 600 /etc/ppp/chap-secrets* /etc/ipsec.d/passwd*
 echo -e "### $VPN_USER $exp">>"/var/lib/premium-script/data-user-l2tp"
 cat <<EOF
+Premium Account Has Been Successfully Created
+====================================
 L2TP/Ipsec Psk VPN Acc Information
 ====================================
 Server IP    : [BUG].$PUBLIC_IP

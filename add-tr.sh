@@ -31,7 +31,10 @@ systemctl restart trojan
 trojanlink="trojan://${user}@${domain}:${tr}"
 clear
 echo -e ""
-echo -e "=============-Trojan-============"
+echo -e "Premium Account Has Been Successfully Created"
+echo -e "====================================="
+echo -e "Trojan Account Information"
+echo -e "====================================="
 echo -e "Remarks        : ${user}"
 echo -e "Host/IP        : ${domain}"
 echo -e "port           : ${tr}"

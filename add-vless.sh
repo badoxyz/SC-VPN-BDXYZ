@@ -36,7 +36,10 @@ systemctl restart v2ray@vless
 systemctl restart v2ray@vnone
 clear
 echo -e ""
-echo -e "==========-V2RAY/VLESS-=========="
+echo -e "Premium Account Has Been Successfully Created"
+echo -e "================================="
+echo -e "V2RAY/VLESS Account Information"
+echo -e "================================="
 echo -e "Remarks        : ${user}"
 echo -e "Domain         : ${domain}"
 echo -e "port TLS       : $tls"

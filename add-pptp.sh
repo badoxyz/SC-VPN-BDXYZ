@@ -36,8 +36,9 @@ chmod 600 /etc/ppp/chap-secrets*
 echo -e "### $VPN_USER $exp">>"/var/lib/premium-script/data-user-pptp"
 cat <<EOF
 
+Premium Account Has Been Successfully Created
 ================================
-PPTP VPN
+PPTP VPN Account Information
 ================================
 Server IP    : $PUBLIC_IP
 Username     : $VPN_USER

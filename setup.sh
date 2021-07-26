@@ -33,7 +33,7 @@ locality=Indonesia
 organization=Bismillah
 organizationalunit=Subhanallah
 commonname=Allahuakbar
-email=admin@geolstore.net
+email=kurniawanzay@gmail.com
 
 # simple password minimal
 wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/password"

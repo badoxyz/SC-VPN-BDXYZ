@@ -26,7 +26,7 @@ EOF
 echo -e "### $user $exp">>"/var/lib/premium-script/data-user-sstp"
 clear
 cat <<EOF
-
+Premium Account Has Been Successfully Created
 ================================
 SSTP VPN
 ================================

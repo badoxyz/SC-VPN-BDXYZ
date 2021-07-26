@@ -79,7 +79,10 @@ port_tls $tls
 port_http $http">>"/etc/shadowsocks-libev/akun.conf"
 service cron restart
 clear
-echo -e "=======-Shadowsocks-======="
+echo -e "Premium Account Has Been Successfully Created"
+echo -e "====================================="
+echo -e "Shadowsocks Account Information"
+echo -e "====================================="
 echo -e "IP/Host        : $IP"
 echo -e "Port OBFS TLS  : $tls"
 echo -e "Port OBFS HTTP : $http"
