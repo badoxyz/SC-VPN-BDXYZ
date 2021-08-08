@@ -30,9 +30,9 @@ ver=$VERSION_ID
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=Bismillah
-organizationalunit=Subhanallah
-commonname=Allahuakbar
+organization=BADOX
+organizationalunit=Badox-VPN
+commonname=Badox-VPN
 email=kurniawanzay@gmail.com
 
 # simple password minimal
@@ -170,7 +170,7 @@ socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
 [dropbear]
-accept = 443
+accept = 445
 connect = 127.0.0.1:109
 
 [dropbear]
