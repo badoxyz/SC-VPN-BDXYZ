@@ -2,6 +2,8 @@
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
+ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
+CITY=$(curl -s ipinfo.io/city )
 MYIP=$(wget -qO- ipv4.wildyproject.com);
 echo "Script By Badoxyz"
 clear
@@ -24,7 +26,7 @@ until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
 		fi
 	done
 uuid=$(cat /proc/sys/kernel/random/uuid)
-read -p "Expired (days): " masaaktif
+read -p "" masaaktif="1"
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 sed -i '/#tls$/a\### '"$user $exp"'\
 },{"id": "'""$uuid""'","alterId": '"2"',"email": "'""$user""'"' /etc/v2ray/config.json
@@ -69,9 +71,12 @@ systemctl restart v2ray@none
 service cron restart
 clear
 echo -e "Premium Account Has Been Successfully Created"
-echo -e "====================================="
+echo -e "================================="
+echo -e "Isp Vps Name   : $ISP"
+echo -e "Region         : $CITY"
+echo -e "================================="
 echo -e "V2RAY/VMESS Account Information"
-echo -e "====================================="
+echo -e "================================="
 echo -e "Remarks        : ${user}"
 echo -e "Domain         : ${domain}"
 echo -e "port TLS       : ${tls}"

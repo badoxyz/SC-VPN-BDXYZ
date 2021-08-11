@@ -86,6 +86,8 @@ apt-get remove --purge exim4 -y
 
 # install wget and curl
 apt -y install wget curl
+apt -y install python
+
 
 # set time GMT +7
 ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
@@ -132,7 +134,7 @@ sed -i 's/Port 22/Port 22/g' /etc/ssh/sshd_config
 apt -y install dropbear
 sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear
 sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=143/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 109"/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 109" -p 69 -p 77/g' /etc/default/dropbear
 echo "/bin/false" >> /etc/shells
 echo "/usr/sbin/nologin" >> /etc/shells
 /etc/init.d/dropbear restart
@@ -169,9 +171,13 @@ socket = a:SO_REUSEADDR=1
 socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
+[edussl]
+accept = 443
+connect = 700
+
 [dropbear]
-accept = 445
-connect = 127.0.0.1:109
+accept = 222
+connect = 127.0.0.1:22
 
 [dropbear]
 accept = 777
@@ -349,6 +355,12 @@ rm -f /root/key.pem
 rm -f /root/cert.pem
 rm -f /root/ssh-vpn.sh
 
+apt install dnsutils jq -y
+apt-get install net-tools -y
+apt-get install tcpdump -y
+apt-get install dsniff -y
+apt install grepcidr -y
+
 # finihsing
 clear
 
@@ -407,7 +419,7 @@ echo ""  | tee -a log-install.txt
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - OpenSSH                 : 22"  | tee -a log-install.txt
 echo "   - OpenVPN                 : TCP 1194, UDP 2200, SSL 442"  | tee -a log-install.txt
-echo "   - Stunnel4                : 443, 777"  | tee -a log-install.txt
+echo "   - Stunnel4                : 222, 777"  | tee -a log-install.txt
 echo "   - Dropbear                : 109, 143"  | tee -a log-install.txt
 echo "   - Squid Proxy             : 3128, 8080 (limit to IP Server)"  | tee -a log-install.txt
 echo "   - Badvpn                  : 7100, 7200, 7300"  | tee -a log-install.txt
