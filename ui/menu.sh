@@ -24,45 +24,47 @@ IPVPS=$(curl -s ipinfo.io/ip )
 	echo -e "   \e[032;1mIsp Name:\e[0m $ISP"
 	echo -e "   \e[032;1mCity:\e[0m $CITY"
 	echo -e "   \e[032;1mTime:\e[0m $WKT"
-	echo -e "   \e[033;1mIPVPS:\e[0m $IPVPS"
+	echo -e "   \e[032;1mIPVPS:\e[0m $IPVPS"
 echo -e  ""
-echo -e  "   -------------------------MENU OPTIONS------------------------" | lolcat
+echo -e   "   =========================PANEL MENU=========================" | lolcat
 echo -e   "   1\e[1;33m)\e[m SSH & OpenVPN Menu"
 echo -e   "   2\e[1;33m)\e[m Panel Wireguard "
-echo -e   "   3\e[1;33m)\e[m Panel L2TP & PPTP Account"
-echo -e   "   4\e[1;33m)\e[m Panel SSTP  Account"
-echo -e   "   5\e[1;33m)\e[m Panel SSR & SS Account"
-echo -e   "   6\e[1;33m)\e[m Panel V2Ray"
-echo -e   "   7\e[1;33m)\e[m Panel VLess"
-echo -e   "   8\e[1;33m)\e[m Panel Trojan"
-echo -e   "   9\e[1;33m)\e[m Panel TrojanGO"
-echo -e   "  \e[1;32m------------------------------------------------------------\e[m" | lolcat
+echo -e   "   3\e[1;33m)\e[m Panel L2TP"
+echo -e   "   4\e[1;33m)\e[m Panel PPTP"
+echo -e   "   5\e[1;33m)\e[m Panel SSTP"
+echo -e   "   6\e[1;33m)\e[m Panel SSR"
+echo -e   "   7\e[1;33m)\e[m Panel Shadowcosks"
+echo -e   "   8\e[1;33m)\e[m Panel V2Ray"
+echo -e   "   9\e[1;33m)\e[m Panel VLess"
+echo -e   "   10\e[1;33m)\e[m Panel Trojan"
+#echo -e   "   9\e[1;33m)\e[m Panel TrojanGO"
+echo -e   "   \e[1;32m============================================================\e" | lolcat
 echo -e   "                             SYSTEM MENU\e[m" | lolcat 
-echo -e   "  \e[1;32m------------------------------------------------------------\e[m" | lolcat
-echo -e   "   10\e[1;33m)\e[m  Add Subdomain Host For VPS"
-echo -e   "   11\e[1;33m)\e[m  Renew Certificate V2RAY"
-echo -e   "   12\e[1;33m)\e[m  Change Port All Account"
-echo -e   "   13\e[1;33m)\e[m  Autobackup Data VPS"
-echo -e   "   14\e[1;33m)\e[m  Backup Data VPS"
-echo -e   "   15\e[1;33m)\e[m  Restore Data VPS"
-echo -e   "   16\e[1;33m)\e[m  Webmin Menu"
-echo -e   "   17\e[1;33m)\e[m  Limit Bandwith Speed Server"
-echo -e   "   18\e[1;33m)\e[m  Check Usage of VPS Ram" 
-echo -e   "   19\e[1;33m)\e[m  Reboot VPS"
-echo -e   "   20\e[1;33m)\e[m  Speedtest VPS"
-echo -e   "   21\e[1;33m)\e[m  Information Display System" 
-echo -e   "   22\e[1;33m)\e[m  Info Script Auto Install"
-echo -e   "   23\e[1;33m)\e[m  Install BBR"
+echo -e   "   \e[1;32m============================================================\e" | lolcat
+echo -e   "   11\e[1;33m)\e[m  Add Subdomain Host For VPS"
+echo -e   "   12\e[1;33m)\e[m  Renew Certificate V2RAY"
+echo -e   "   13\e[1;33m)\e[m  Change Port All Account"
+echo -e   "   14\e[1;33m)\e[m  Autobackup Data VPS"
+echo -e   "   15\e[1;33m)\e[m  Backup Data VPS"
+echo -e   "   16\e[1;33m)\e[m  Restore Data VPS"
+echo -e   "   17\e[1;33m)\e[m  Webmin Menu"
+echo -e   "   18\e[1;33m)\e[m  Limit Bandwith Speed Server"
+echo -e   "   19\e[1;33m)\e[m  Check Usage of VPS Ram" 
+echo -e   "   20\e[1;33m)\e[m  Reboot VPS"
+echo -e   "   21\e[1;33m)\e[m  Speedtest VPS"
+echo -e   "   22\e[1;33m)\e[m  Information Display System" 
+echo -e   "   23\e[1;33m)\e[m  Info Script Auto Install"
+echo -e   "   24\e[1;33m)\e[m  Install BBR"
 #echo -e   "   24\e[1;33m)\e[m  Add ID Cloudflare"
 #echo -e   "   25\e[1;33m)\e[m  Cloudflare Add-Ons"
 #echo -e   "   26\e[1;33m)\e[m  Pointing BUG"
-echo -e   "   24\e[1;33m)\e[m  Clear log"
-echo -e   "   25\e[1;33m)\e[m  Auto Reboot"
+echo -e   "   25\e[1;33m)\e[m  Clear log"
+echo -e   "   26\e[1;33m)\e[m  Auto Reboot"
 #echo -e   "   29\e[1;33m)\e[m  Panel-bot"
-echo -e   "   26\e[1;33m)\e[m  Pointing VPS"
-echo -e   "  \e[1;32m------------------------------------------------------------\e[m" | lolcat
+echo -e   "   27\e[1;33m)\e[m  Pointing VPS"
+echo -e   "   \e[1;32m------------------------------------------------------------\e" | lolcat
 echo -e   "   x)   Exit" | lolcat
-echo -e   "  \e[1;32m------------------------------------------------------------\e[m" | lolcat
+echo -e   "   \e[1;32m------------------------------------------------------------\e" | lolcat
 echo -e   ""
 read -p "     Select From Options [1-8 or x] :  " menu
 echo -e   ""
@@ -77,72 +79,75 @@ wgr
 l2tp
 ;;
 4)
-sstpp
+pptp
 ;;
 5)
-ssssr
+sstpp
 ;;
 6)
-v2raay
+ssssr
 ;;
 7)
-vleess
+sssss
 ;;
 8)
-trojaan
+v2raay
 ;;
 9)
-trojangoo
+vleess
 ;;
 10)
-add-host
+trojaan
 ;;
 11)
-certv2ray
+add-host
 ;;
 12)
-change-port
+certv2ray
 ;;
 13)
-autobackup
+change-port
 ;;
 14)
-backup
+autobackup
 ;;
 15)
-restore
+backup
 ;;
 16)
-wbmn
+restore
 ;;
 17)
-limit-speed
+wbmn
 ;;
 18)
-ram
+limit-speed
 ;;
 19)
-reboot
+ram
 ;;
 20)
-speedtest
+reboot
 ;;
 21)
-info
+speedtest
 ;;
 22)
-about
+info
 ;;
 23)
-bbr
+about
 ;;
 24)
-clear-log
+bbr
 ;;
 25)
-autoreboot
+clear-log
 ;;
 26)
+autoreboot
+;;
+27)
 point
 ;;
 x)

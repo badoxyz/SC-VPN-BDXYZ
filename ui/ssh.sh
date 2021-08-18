@@ -6,9 +6,9 @@ MYIP=$(wget -qO- ifconfig.co);
 clear
 figlet PANEL SSH | lolcat -d 5
 echo -e ""
-echo -e "\e[1;32m═════════════════════════════════════════\e[m" | lolcat
+echo -e "\e[1;32m═════════════════════════════════════════\e" | lolcat
 echo -e "          \e[1;31m\e[1;31m═[\e[mSSH & OpenVPN Menu\e[1;31m]═\e[m" 
-echo -e "\e[1;32m═════════════════════════════════════════\e[m" | lolcat
+echo -e "\e[1;32m═════════════════════════════════════════\e" | lolcat
 echo -e " 1\e[1;33m)\e[m  Create SSH & OpenVPN Account"
 echo -e " 2\e[1;33m)\e[m  Trial Account SSH & OpenVPN"
 echo -e " 3\e[1;33m)\e[m  Renew SSH & OpenVPN Account"
@@ -21,9 +21,9 @@ echo -e " 9\e[1;33m)\e[m  Cek Users Who Do Multi Login SSH"
 echo -e " 10\e[1;33m)\e[m Restart Service Dropbear, Squid3"
 echo -e "     OpenVPN dan SSH"
 echo -e ""
-echo -e "\e[1;32m══════════════════════════════════════════\e[m" | lolcat
+echo -e "\e[1;32m══════════════════════════════════════════\e" | lolcat
 echo -e " x)   MENU"
-echo -e "\e[1;32m══════════════════════════════════════════\e[m" | lolcat
+echo -e "\e[1;32m══════════════════════════════════════════\e" | lolcat
 echo -e ""
 read -p "     Please Input Number  [1-10 or x] :  "  ssh
 echo -e ""
@@ -59,7 +59,7 @@ ceklim
 restart
 ;;
 x)
-exit
+menu
 ;;
 *)
 echo "Please enter an correct number"

@@ -4,30 +4,34 @@ green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- ifconfig.co);
 clear
-figlet PANEL L2TP | lolcat -d 5
+figlet PANEL PPTP | lolcat -d 5
 echo -e ""
 echo -e "\e[1;32m═══════════════════════════════════════\e" | lolcat
-echo -e "         \e[1;31m\e[1;31m═[\e[mL2TP Menu\e[1;31m]═\e[m" 
+echo -e "         \e[1;31m\e[1;31m═[\e[mPPTP Menu\e[1;31m]═\e[m" 
 echo -e "\e[1;32m═══════════════════════════════════════\e" | lolcat
-echo -e " 1\e[1;33m)\e[m  Creating L2TP Account"
-echo -e " 2\e[1;33m)\e[m  Deleting L2TP Account"
-echo -e " 3\e[1;33m)\e[m  Renew L2TP Account"
+echo -e " 1\e[1;33m)\e[m  Create Account PPTP"
+echo -e " 2\e[1;33m)\e[m  Delete PPTP Account"
+echo -e " 3\e[1;33m)\e[m  Check User Login PPTP"
+echo -e " 4\e[1;33m)\e[m  Renew PPTP Account"
 echo -e ""
 echo -e "\e[1;32m══════════════════════════════════════════\e" | lolcat
 echo -e " x)   MENU"
 echo -e "\e[1;32m══════════════════════════════════════════\e" | lolcat
 echo -e ""
-read -p "     Please Input Number  [1-3 or x] :  "  l2tp
+read -p "     Please Input Number  [1-4 or x] :  "  pptp
 echo -e ""
-case "$l2tp" in
+case "$pptp" in
 1)
-add-l2tp
+add-pptp
 ;;
 2)
-del-l2tp
+del-pptp
 ;;
 3)
-renew-l2tp
+cek-pptp
+;;
+4)
+renew-pptp
 ;;
 x)
 menu

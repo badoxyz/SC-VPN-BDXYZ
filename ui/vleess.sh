@@ -4,8 +4,10 @@ green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- ifconfig.co);
 clear
+figlet PANEL VLESS | lolcat -d 5
+echo -e ""
 echo -e "\e[1;32m════════════════════════════════════════\e[m" | lolcat
-echo -e "             \e[1;31m\e[1;31m═[\e[mV2Ray Vless\e[1;31m]═\e[m" 
+echo -e "             \e[1;31m\e[1;31m═[\e[mVless MENU\e[1;31m]═\e[m" 
 echo -e "\e[1;32m════════════════════════════════════════\e[m" | lolcat
 echo -e " 1\e[1;33m)\e[m  Create Vless Websocket Account"
 echo -e " 2\e[1;33m)\e[m  Deleting Vless Websocket Account"
