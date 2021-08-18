@@ -26,7 +26,9 @@ IPVPS=$(curl -s ipinfo.io/ip )
 	echo -e "   \e[032;1mTime:\e[0m $WKT"
 	echo -e "   \e[032;1mIPVPS:\e[0m $IPVPS"
 echo -e  ""
-echo -e   "   =========================PANEL MENU=========================" | lolcat
+echo -e   "   \e[1;32m============================================================\e" | lolcat
+echo -e   "                             PANEL MENU\e" | lolcat 
+echo -e   "   \e[1;32m============================================================\e" | lolcat
 echo -e   "   1\e[1;33m)\e[m Panel SSH & OpenVPN"
 echo -e   "   2\e[1;33m)\e[m Panel Wireguard "
 echo -e   "   3\e[1;33m)\e[m Panel L2TP"
@@ -38,6 +40,8 @@ echo -e   "   8\e[1;33m)\e[m Panel V2Ray"
 echo -e   "   9\e[1;33m)\e[m Panel VLess"
 echo -e   "   10\e[1;33m)\e[m Panel Trojan"
 #echo -e   "   9\e[1;33m)\e[m Panel TrojanGO"
+echo -e   "   \e[1;32m============================================================\e" | lolcat
+echo -e  ""
 echo -e   "   \e[1;32m============================================================\e" | lolcat
 echo -e   "                             SYSTEM MENU\e" | lolcat 
 echo -e   "   \e[1;32m============================================================\e" | lolcat
