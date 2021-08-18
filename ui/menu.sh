@@ -41,8 +41,6 @@ echo -e   "   9\e[1;33m)\e[m Panel VLess"
 echo -e   "   10\e[1;33m)\e[m Panel Trojan"
 #echo -e   "   9\e[1;33m)\e[m Panel TrojanGO"
 echo -e   "   \e[1;32m============================================================\e" | lolcat
-echo -e  ""
-echo -e   "   \e[1;32m============================================================\e" | lolcat
 echo -e   "                             SYSTEM MENU\e" | lolcat 
 echo -e   "   \e[1;32m============================================================\e" | lolcat
 echo -e   "   11\e[1;33m)\e[m  Add Subdomain Host For VPS"
