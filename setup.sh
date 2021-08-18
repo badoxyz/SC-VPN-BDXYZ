@@ -257,7 +257,7 @@ netfilter-persistent reload
 cd /usr/bin
 wget -O add-host "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/add-host.sh"
 wget -O about "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/about.sh"
-wget -O menu "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/menu.sh"
+#wget -O menu "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/menu.sh"
 wget -O usernew "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/trial.sh"
 wget -O hapus "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/hapus.sh"
@@ -285,6 +285,19 @@ wget -O port-vless "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/
 wget -O wbmn "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/webmin.sh"
 wget -O xp "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/xp.sh"
 wget -O kernel-updt "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/kernel-update.sh"
+wget -O menu "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/ui/menu.sh"
+wget -O l2tp "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/ui/l2tp.sh"
+wget -O ssh "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/ui/ssh.sh"
+wget -O ssssr "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/ui/ssssr.sh"
+wget -O sstpp "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/ui/sstpp.sh"
+wget -O trojaan "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/ui/trojaan.sh"
+wget -O v2raay "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/ui/v2raay.sh"
+wget -O wgr "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/ui/wgr.sh"
+wget -O vleess "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/ui/vleess.sh"
+wget -O bbr "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/ui/bbr.sh"
+wget -O bannerku "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/bannerku"
+wget -O autoreboot "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/autoreboot.sh"
+
 chmod +x add-host
 chmod +x menu
 chmod +x usernew
@@ -315,6 +328,18 @@ chmod +x port-vless
 chmod +x wbmn
 chmod +x xp
 chmod +x kernel-updt
+chmod +x menu
+chmod +x l2tp
+chmod +x ssh
+chmod +x ssssr
+chmod +x sstpp
+chmod +x trojaan
+chmod +x v2raay
+chmod +x wgr
+chmod +x vleess
+chmod +x bbr
+chmod +x bannerku
+chmod +x autoreboot
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
 # remove unnecessary files
