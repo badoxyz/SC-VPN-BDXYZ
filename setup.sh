@@ -295,6 +295,8 @@ wget -O v2raay "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/ui/v
 wget -O wgr "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/ui/wgr.sh"
 wget -O vleess "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/ui/vleess.sh"
 wget -O bbr "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/ui/bbr.sh"
+wget -O pptp "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/ui/pptp.sh"
+wget -O sssss "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/ui/sssss.sh"
 wget -O bannerku "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/bannerku"
 wget -O autoreboot "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/autoreboot.sh"
 
@@ -338,6 +340,8 @@ chmod +x v2raay
 chmod +x wgr
 chmod +x vleess
 chmod +x bbr
+chmod +x sstp
+chmod +x sssss
 chmod +x bannerku
 chmod +x autoreboot
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
