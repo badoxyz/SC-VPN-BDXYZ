@@ -27,7 +27,7 @@ IPVPS=$(curl -s ipinfo.io/ip )
 	echo -e "   \e[032;1mIPVPS:\e[0m $IPVPS"
 echo -e  ""
 echo -e   "   =========================PANEL MENU=========================" | lolcat
-echo -e   "   1\e[1;33m)\e[m SSH & OpenVPN Menu"
+echo -e   "   1\e[1;33m)\e[m Panel SSH & OpenVPN"
 echo -e   "   2\e[1;33m)\e[m Panel Wireguard "
 echo -e   "   3\e[1;33m)\e[m Panel L2TP"
 echo -e   "   4\e[1;33m)\e[m Panel PPTP"
@@ -66,7 +66,7 @@ echo -e   "   \e[1;32m----------------------------------------------------------
 echo -e   "   x)   Exit" | lolcat
 echo -e   "   \e[1;32m------------------------------------------------------------\e" | lolcat
 echo -e   ""
-read -p "     Select From Options [1-8 or x] :  " menu
+read -p "     Select From Options [1-27 or x] :  " menu
 echo -e   ""
 case $menu in
 1)
