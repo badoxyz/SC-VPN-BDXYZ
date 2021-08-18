@@ -7,6 +7,7 @@ CITY=$(curl -s ipinfo.io/city )
 MYIP=$(wget -qO- ifconfig.me/ip);
 echo "Script By Badoxyz"
 clear
+source /var/lib/premium-script/ipvps.conf
 if [[ "$IP2" = "" ]]; then
 domain=$(cat /etc/v2ray/domain)
 else
@@ -51,7 +52,7 @@ echo -e "Domain         : ${domain}"
 echo -e "Host           : $IP"
 echo -e "OpenSSH        : 22"
 echo -e "Dropbear       : 109, 143"
-echo -e "WS TLS         : 2096"
+echo -e "WS TLS         : 443"
 echo -e "WS non TLS     : 2095"
 echo -e "WS OVPN        : 2082"
 echo -e "SSL/TLS        :$ssl"
