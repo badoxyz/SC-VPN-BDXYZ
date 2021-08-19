@@ -257,7 +257,6 @@ netfilter-persistent reload
 cd /usr/bin
 wget -O add-host "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/add-host.sh"
 wget -O about "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/about.sh"
-#wget -O menu "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/menu.sh"
 wget -O usernew "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/trial.sh"
 wget -O hapus "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/hapus.sh"
@@ -301,7 +300,6 @@ wget -O bannerku "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/ba
 wget -O autoreboot "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/autoreboot.sh"
 
 chmod +x add-host
-chmod +x menu
 chmod +x usernew
 chmod +x trial
 chmod +x hapus
