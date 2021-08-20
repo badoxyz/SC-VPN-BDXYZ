@@ -7,18 +7,19 @@ clear
 figlet PANEL VLESS | lolcat -d 5
 echo -e ""
 echo -e "\e[1;32m════════════════════════════════════════\e[m" | lolcat
-echo -e "             \e[1;31m\e[1;31m═[\e[mVless MENU\e[1;31m]═\e[m" 
+echo -e "             \e[1;31m\e[1;31m[\e[mVless MENU\e[1;31m]\e[m" 
 echo -e "\e[1;32m════════════════════════════════════════\e[m" | lolcat
 echo -e " 1\e[1;33m)\e[m  Create Vless Websocket Account"
 echo -e " 2\e[1;33m)\e[m  Deleting Vless Websocket Account"
 echo -e " 3\e[1;33m)\e[m  Renew Vless Account "
 echo -e " 4\e[1;33m)\e[m  Check User Login Vless"
+echo -e " 5\e[1;33m)\e[m  Trial Vless Websocket Account"
 echo -e ""
 echo -e "\e[1;32m══════════════════════════════════════════\e[m" | lolcat
 echo -e " x)   MENU"
 echo -e "\e[1;32m══════════════════════════════════════════\e[m" | lolcat
 echo -e ""
-read -p "     Please Input Number  [1-4 or x] :  "  vless
+read -p "     Please Input Number  [1-5 or x] :  "  vless
 echo -e ""
 case $vless in
 1)
@@ -32,6 +33,9 @@ renew-vless
 ;;
 4)
 cek-vless
+;;
+5)
+trial-vless
 ;;
 x)
 menu

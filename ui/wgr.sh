@@ -7,18 +7,19 @@ clear
 figlet PANEL WIREGUARD | lolcat -d 5
 echo -e ""
 echo -e "\e[1;32m═══════════════════════════════════════\e" | lolcat
-echo -e "              \e[1;31m\e[1;31m═[\e[mWireguard Menu\e[1;31m]═\e[m" 
+echo -e "              \e[1;31m\e[1;31m[\e[mWireguard Menu\e[1;31m]\e[m" 
 echo -e "\e[1;32m═══════════════════════════════════════\e" | lolcat
 echo -e " 1\e[1;33m)\e[m  Create Wireguard Account"
 echo -e " 2\e[1;33m)\e[m  Delete Wireguard Account"
 echo -e " 3\e[1;33m)\e[m  Check User Login Wireguard"
 echo -e " 4\e[1;33m)\e[m  Renew Wireguard Account"
+echo -e " 5\e[1;33m)\e[m  Trial Wireguard Account"
 echo -e ""
 echo -e "\e[1;32m═════════════════════════════════════════\e" | lolcat
 echo -e " x)   MENU"
 echo -e "\e[1;32m═════════════════════════════════════════\e" | lolcat
 echo -e ""
-read -p "     Please Input Number  [1-4 or x] :  "  wgr
+read -p "     Please Input Number  [1-5 or x] :  "  wgr
 echo -e ""
 case $wgr in
 1)
@@ -32,6 +33,9 @@ cek-wg
 ;;
 4)
 renew-wg
+;;
+5)
+trial-wg
 ;;
 x)
 menu
