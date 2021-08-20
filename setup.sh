@@ -134,7 +134,7 @@ sed -i 's/Port 22/Port 22/g' /etc/ssh/sshd_config
 apt -y install dropbear
 sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear
 sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=143/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 109 -p 69 -p 77"/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 109" -p 69 -p 77/g' /etc/default/dropbear
 echo "/bin/false" >> /etc/shells
 echo "/usr/sbin/nologin" >> /etc/shells
 /etc/init.d/dropbear restart
@@ -257,6 +257,7 @@ netfilter-persistent reload
 cd /usr/bin
 wget -O add-host "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/add-host.sh"
 wget -O about "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/about.sh"
+#wget -O menu "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/menu.sh"
 wget -O usernew "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/trial.sh"
 wget -O hapus "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/hapus.sh"
@@ -298,8 +299,17 @@ wget -O pptp "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/ui/ppt
 wget -O sssss "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/ui/sssss.sh"
 wget -O bannerku "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/bannerku"
 wget -O autoreboot "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/autoreboot.sh"
+wget -O trial-l2tp "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/trial-l2tp.sh"
+wget -O trial-ss "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/trial-ss.sh"
+wget -O trial-ssr "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/trial-ssr.sh"
+wget -O trial-sstp "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/trial-sstp.sh"
+wget -O trial-tr "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/trial-tr.sh"
+wget -O trial-vless "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/trial-vless.sh"
+wget -O trial-wg "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/trial-wg.sh"
+wget -O trial-ws "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/trial-ws.sh"
 
 chmod +x add-host
+chmod +x menu
 chmod +x usernew
 chmod +x trial
 chmod +x hapus
@@ -342,6 +352,14 @@ chmod +x sstp
 chmod +x sssss
 chmod +x bannerku
 chmod +x autoreboot
+chmod +x trial-l2tp
+chmod +x trial-ss
+chmod +x trial-ssr
+chmod +x trial-sstp
+chmod +x trial-tr
+chmod +x trial-vless
+chmod +x trial-wg
+chmod +x trial-ws
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
 # remove unnecessary files
@@ -387,6 +405,9 @@ apt-get install net-tools -y
 apt-get install tcpdump -y
 apt-get install dsniff -y
 apt install grepcidr -y
+apt-get install lolcat -y
+apt-get install figlet -y
+
 
 # finihsing
 clear
