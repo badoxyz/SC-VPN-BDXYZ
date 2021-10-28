@@ -307,6 +307,7 @@ wget -O trial-tr "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/tr
 wget -O trial-vless "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/trial-vless.sh"
 wget -O trial-wg "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/trial-wg.sh"
 wget -O trial-ws "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/trial-ws.sh"
+wget -O bbr "https://raw.githubusercontent.com/badoxyz/SC-VPN-BDXYZ/main/ui/system.sh"
 
 chmod +x add-host
 chmod +x menu
@@ -360,6 +361,7 @@ chmod +x trial-tr
 chmod +x trial-vless
 chmod +x trial-wg
 chmod +x trial-ws
+chmod +x system
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
 # remove unnecessary files
